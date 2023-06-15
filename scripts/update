@@ -1,0 +1,12 @@
+#!/bin/bash
+
+USAGE="Build container images."
+
+# Ensure container images are current
+docker compose build
+
+# Update Yarn dependencies
+./scripts/yarn install --frozen-lockfile
+
+# Build static asset bundle for React frontend
+./scripts/yarn run build

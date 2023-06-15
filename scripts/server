@@ -1,0 +1,5 @@
+#!/bin/bash
+
+USAGE="Bring up all of the services required for the project to function."
+
+docker compose up app
