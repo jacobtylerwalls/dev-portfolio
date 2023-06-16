@@ -11,6 +11,7 @@
     "homepage": "https://jacobtylerwalls.github.io/dev-portfolio/",
     "dependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@chakra-ui/icons": "^2.0.19",
         "@chakra-ui/react": "^2.5.1",
         "@emotion/react": "^11",
         "@emotion/styled": "^11",

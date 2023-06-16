@@ -16,8 +16,13 @@ const theme = extendTheme({
         Button,
     },
     fonts: {
-        heading: `'Helvetica', sans-serif`,
-        body: `'Arial', sans-serif`,
+        heading: `'Lato', sans-serif`,
+        body: `'Lato', sans-serif`,
+    },
+    colors: {
+        brand: {
+            500: '#b4c9d3',
+        },
     },
 });
 

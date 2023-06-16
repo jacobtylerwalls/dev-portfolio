@@ -1,12 +1,14 @@
-
-import { Container } from '@chakra-ui/react';
-
+import { Box, Flex } from '@chakra-ui/react';
+import Sidebar from './components/Sidebar';
 
 function App() {
     return (
-        <Container maxWidth='650px'>
-            <p>Jacob Walls | full-stack developer</p>
-        </Container>
+        <Flex pl={0} maxWidth='650px' height='100%'>
+            <Sidebar />
+            <Box height='100vh'>
+                <p>Jacob Walls | full-stack developer</p>
+            </Box>
+        </Flex>
     );
 }
 

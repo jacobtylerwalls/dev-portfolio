@@ -1,4 +1,4 @@
-# Jacob Walls | full-stack developer
+# Jacob Walls | full-stack engineer
 
 
 ### Requirements
