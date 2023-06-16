@@ -5,10 +5,10 @@ import jtw from '../media/jtw.png';
 
 export default function Sidebar() {
     return (
-        <Container maxW='xs' height='100%' bgColor='brand.500' bgGradient='linear(to-r, brand.500, teal.100)' ml={0}>
-            <Flex direction='column' alignItems='center' pl={0} mb={4} minHeight='100vh'>
+        <Container minHeight='100vh' mr={0} maxW='xs' bgColor='brand.500' bgGradient='linear(to-r, brand.500, teal.100)' ml={0}>
+            <Flex direction='column' alignItems='center' pl={0} mb={4}>
                 <Avatar mt={12} mb={6} size={'2xl'} src={jtw} name='Jacob Walls' />
-                <Heading fontWeight={'semibold'}>Jacob Walls</Heading>
+                <Heading textAlign='center' fontWeight={'semibold'}>Jacob Walls</Heading>
                 <Text mb={4}>full-stack engineer</Text>
                 <Text>geospatial 🛰️</Text>
                 <Text>healthcare 🏥</Text>
@@ -21,13 +21,13 @@ export default function Sidebar() {
                 </Link>
 
                 <Text mt={16} fontFamily={'courier'}>Django</Text>
-                <Text fontStyle={'italic'}>triage and review team</Text>
+                <Text textAlign='center' fontStyle={'italic'}>triage and review team</Text>
                 <Text mt={8} fontFamily={'courier'}>pylint</Text>
                 <Text fontStyle={'italic'}>maintainer</Text>
                 <Text mt={8} fontFamily={'courier'}>music21/music21j</Text>
                 <Text fontStyle={'italic'}>core developer</Text>
 
             </Flex>
-        </Container >
+        </Container>
     )
 }
