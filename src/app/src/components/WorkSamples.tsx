@@ -63,8 +63,9 @@ function SampleSection({ title, samples }: { title: string, samples: Sample[] })
                                                 <Fragment key={index}>
                                                     <Text fontSize='sm' mt={4}>
                                                         {p.split(magicPhrase)[0]}
-                                                        <Link mb={0} href={sample.link} textDecoration='underline' textDecorationStyle='dashed'>
-                                                            {magicPhrase + ' '}<Icon as={ExternalLinkIcon} />
+                                                        <Link mb={0} href={sample.link} fontWeight='bold'>
+                                                            {magicPhrase + ' '}
+                                                            <Icon as={ExternalLinkIcon} />
                                                         </Link>
                                                         {' '}
                                                         {p.split(magicPhrase)[1]}
