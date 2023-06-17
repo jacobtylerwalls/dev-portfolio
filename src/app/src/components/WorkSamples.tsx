@@ -63,7 +63,7 @@ function SampleSection({ title, samples }: { title: string, samples: Sample[] })
                                                 <Fragment key={index}>
                                                     <Text fontSize='sm' mt={4}>
                                                         {p.split(magicPhrase)[0]}
-                                                        <Link mb={0} href={sample.link} fontWeight='bold'>
+                                                        <Link mb={0} href={sample.link} fontWeight='bold' isExternal>
                                                             {magicPhrase + ' '}
                                                             <Icon as={ExternalLinkIcon} />
                                                         </Link>
@@ -89,7 +89,7 @@ function SampleSection({ title, samples }: { title: string, samples: Sample[] })
 const frontEndSamples: Sample[] = [
     {
         'title': 'Using RTK Query to cache and debounce API calls',
-        'link': 'https://github.com/azavea/iow-boundary-sync/pull/144',
+        'link': 'https://github.com/azavea/iow-boundary-tool/pull/144',
         'paragraphs': [
             'In this tool for rural water utility employees '
             + 'to digitize and hand-tailor their system boundaries, I used RTK Query--'
@@ -142,7 +142,7 @@ const backEndSamples: Sample[] = [
     },
     {
         'title': "Carving out a special case from a pylint check",
-        'link': 'https://github.com/django/django/pull/16519',
+        'link': 'https://github.com/pylint-dev/pylint/pull/5684',
         'paragraphs': [
             'In the 2.13 release of pylint, I adjusted the used-before-assignment '
             + 'message to trigger when a developer depends on an assignment that only '
@@ -159,7 +159,7 @@ const backEndSamples: Sample[] = [
 const otherSamples = [
     {
         'title': "Clarifying the caveats around QuerySet.filter()",
-        'link': 'https://github.com/django/django/pull/16519',
+        'link': 'https://github.com/django/django/pull/15236',
         'paragraphs': [
             'The prior examples contrasting `.filter(condition1).filter(condition2)` '
             + 'against `.filter(condition1, condition2)` were a bit forbidding and wordy. ',
@@ -169,7 +169,7 @@ const otherSamples = [
     },
     {
         'title': "Making prefetch_related() play nicely with iterator()",
-        'link': 'https://github.com/django/django/pull/16519',
+        'link': 'https://github.com/django/django/pull/15334',
         'paragraphs': [
             'Here I resuscitated an abandoned effort in Django to make a database-related '
             + 'optimization compatible with a memory-related one.'
