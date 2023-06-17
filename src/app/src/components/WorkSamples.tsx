@@ -96,12 +96,12 @@ const frontEndSamples: Sample[] = [
         'title': 'Using RTK Query to cache and debounce API calls',
         'link': 'https://github.com/azavea/iow-boundary-tool/pull/144',
         'paragraphs': [
-            'In this tool for rural water utility employees '
-            + 'to digitize and hand-tailor their system boundaries, I used RTK Query--'
-            + 'a first-party tool from the makers of Redux--to efficiently communicate with the database. ',
+            'In this tool enabling rural water utility employees to '
+            + 'digitize and hand-tailor their system boundaries, I used RTK Query '
+            + '(a first-party tool from the makers of Redux) to efficiently communicate with the database. ',
 
             '(Debouncing is especially important for a click-intensive user experience like manipulating '
-            + 'the edges of a reference image.)'
+            + 'the edges of a polygon.)'
         ]
     },
     {
