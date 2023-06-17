@@ -27,6 +27,14 @@ const baseStyle = definePartsStyle({
             borderBottom: 0,
         },
     },
+    panel: {
+        _first: {
+            marginTop: 0,
+        },
+        _last: {
+            marginBottom: 0,
+        },
+    }
 })
 
 const accordionTheme = defineMultiStyleConfig({ baseStyle })

@@ -14,7 +14,7 @@ function App() {
                     </HStack>
                     <HStack spacing={4}>
                         <Text size='sm'>🔍</Text>
-                        <Text size='sm'>Explore some recent open-source work I completed at{' '}
+                        <Text size='sm'>Below, I share some recent open-source work from my tenure at{' '}
                             <Link textColor='teal.700' href='https://www.azavea.com'>Azavea</Link>
                             {' '}and{' '}
                             <Link textColor='teal.700' href='https://www.element84.com'>Element 84</Link>
