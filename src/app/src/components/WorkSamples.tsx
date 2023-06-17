@@ -28,18 +28,6 @@ export default function WorkSamples() {
 
 
 function SampleSection({ title, samples }: { title: string, samples: Sample[] }) {
-    const verbPhrases = [
-        'efficiently communicate',
-        'unnecessarily rendering',
-        'style Leaflet-managed popups',
-        'improve',
-        'extended',
-        'carved out',
-        'rewrote',
-        'resuscitated',
-        'worked out',
-    ];
-
     return (
         <Container my={0} pb={4}>
             <Heading mb={4} size='sm'>{title}</Heading>
@@ -56,26 +44,7 @@ function SampleSection({ title, samples }: { title: string, samples: Sample[] })
                                 </AccordionButton>
                             </h2>
                             <AccordionPanel pb={4}>
-                                {sample.paragraphs.map((p, index) => {
-                                    for (const magicPhrase of verbPhrases) {
-                                        if (p.includes(magicPhrase)) {
-                                            return (
-                                                <Fragment key={index}>
-                                                    <Text fontSize='sm' mt={4}>
-                                                        {p.split(magicPhrase)[0]}
-                                                        <Link mb={0} href={sample.link} fontWeight='bold' isExternal>
-                                                            {magicPhrase + ' '}
-                                                            <Icon as={ExternalLinkIcon} />
-                                                        </Link>
-                                                        {' '}
-                                                        {p.split(magicPhrase)[1]}
-                                                    </Text>
-                                                </Fragment>
-                                            );
-                                        }
-                                    }
-                                    return (<Text fontSize='sm' key={index} mt={4}>{p}</Text>);
-                                })}
+                                {makeParagraphs(sample)}
                             </AccordionPanel>
                         </AccordionItem>
                     )
@@ -83,6 +52,42 @@ function SampleSection({ title, samples }: { title: string, samples: Sample[] })
             </Accordion>
         </Container>
     );
+}
+
+
+function makeParagraphs(sample: Sample) {
+    const verbPhrases = [
+        'efficiently communicate',
+        'unnecessarily rendering',
+        'style Leaflet-managed popups',
+        'improve',
+        'extended',
+        'carved out',
+        'rewrote',
+        'resuscitated',
+        'worked out',
+    ];
+
+    return sample.paragraphs.map((p, index) => {
+        for (const magicPhrase of verbPhrases) {
+            if (p.includes(magicPhrase)) {
+                return (
+                    <Fragment key={index}>
+                        <Text fontSize='sm' mt={4}>
+                            {p.split(magicPhrase)[0]}
+                            <Link mb={0} href={sample.link} fontWeight='bold' isExternal>
+                                {magicPhrase + ' '}
+                                <Icon as={ExternalLinkIcon} />
+                            </Link>
+                            {' '}
+                            {p.split(magicPhrase)[1]}
+                        </Text>
+                    </Fragment>
+                )
+            }
+            return (<Text fontSize='sm' key={index} mt={4}>{p}</Text>);
+        }
+    });
 }
 
 
