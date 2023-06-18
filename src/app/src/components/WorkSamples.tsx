@@ -65,7 +65,7 @@ function makeParagraphs(sample: Sample) {
         'carved out',
         'rewrote',
         'resuscitated',
-        'worked out',
+        'reported an issue',
     ];
 
     return sample.paragraphs.map((p, index) => {
@@ -181,13 +181,15 @@ const otherSamples = [
         ],
     },
     {
-        'title': "Debugging and regression-testing jagged-edged lines of music",
-        'link': 'https://github.com/cuthbertLab/music21j/pull/126',
+        'title': "Reporting a release blocker in Python 3.11",
+        'link': 'https://github.com/python/cpython/issues/95173',
         'paragraphs': [
-            'A subtle issue in a JS library for interactive music notation '
-            + 'was causing lines of music to display with jagged widths. '
-            + 'I worked out the necessary order '
-            + 'of operations and added regression tests with JUnit.'
+            'I took the initiative to test one of the Python 3.11 betas against '
+            + 'a project I help maintain in my free time. After adjusting the test suite '
+            + 'to cope with upstream dependencies not yet compatible with 3.11, I isolated '
+            + 'and reported an issue that was regarded as a release blocker. ',
+
+            'I then followed up with a regression test.'
         ],
     },
 ];
