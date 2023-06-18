@@ -85,8 +85,8 @@ function makeParagraphs(sample: Sample) {
                     </Fragment>
                 )
             }
-            return (<Text fontSize='sm' key={index} mt={4}>{p}</Text>);
         }
+        return (<Text fontSize='sm' key={index} mt={4}>{p}</Text>);
     });
 }
 
