@@ -166,7 +166,7 @@ const otherSamples = [
         'title': "Clarifying the caveats around QuerySet.filter()",
         'link': 'https://github.com/django/django/pull/15236',
         'paragraphs': [
-            'The prior examples contrasting `.filter(condition1).filter(condition2)` '
+            'The prior examples in the Django documentation contrasting `.filter(condition1).filter(condition2)` '
             + 'against `.filter(condition1, condition2)` were a bit forbidding and wordy. ',
 
             'Here, I rewrote the examples for clarity.',
